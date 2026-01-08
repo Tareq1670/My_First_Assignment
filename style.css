@@ -1,0 +1,193 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+body{
+  background: rgba(251, 251, 251,1);
+}
+
+/* Multi style */
+
+a{
+  font-size: 16px;
+  color: rgba(0,0,0,1);
+  font-weight: 500; 
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#btn{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 4px;
+  background: rgba(70,145,101,1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition:
+   background-color 0.25s ease,
+   transform 0.25s cubic-bezier(0.4,0,0.2,1),
+   box-shadow 0.25s ease
+  ;
+}
+
+
+#btn:hover{
+  background: rgb(87, 191, 130);
+  box-shadow: 0px 8px 15px rgba(70,145,101,0.35);
+  transform: translateY(-2px);
+}
+
+.btn2:hover{
+  background: rgba(215, 213, 255, 0.263);
+  box-shadow: 0px 8px 15px rgba(232, 217, 249, 0.304);
+  transform: translateY(-2px);
+}
+
+
+
+
+/* Main style */
+/* Nav Section */
+
+
+header{
+  background: rgb(251, 251, 251);
+}
+
+.header_section{
+  max-width: 1360px ;
+  padding: 16px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_section .image img{
+  width: 139px;
+}
+
+.header_section .nav_item ul{
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.header_section .access_button a{
+  color: rgba(255, 255, 255, 1);
+}
+
+
+/* Hero Section */
+
+#hero{
+  min-height: 700px;
+  width: 100%;
+  background: url("assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .heading{
+  max-width: 770px;
+  text-align: center;
+}
+
+
+.heading .early_access_link a{
+  color: rgba(70, 145, 101, 1);
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 1000px ;
+  margin-bottom: 16px;
+}
+
+.heading .early_access_link a::before{
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(70,145, 101, 1);
+  box-shadow: 0px 0px 0px 4px rgba(58, 143, 92, 0.25),0px 0px 0px 8px rgba(58, 143, 92, 0.146);
+  animation: shadow 2s infinite;
+}
+
+@keyframes shadow {
+  0%{box-shadow: 0 0 0 rgba(58, 143, 92, 0.3),0 0 0 rgba(58, 143, 92, 0.4);}
+}
+
+.heading h1{
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 16px;
+}
+
+.heading h1 span{
+  color: rgba(48, 184, 104, 1);
+}
+
+
+.heading p{
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.heading .heading_button{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading .heading_button #btn{
+  display: flex;
+  gap: 10px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.heading .heading_button #btn2{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  background: transparent;
+  padding: 12px 16px;
+  border: 1px solid rgba(255,255,255,1);
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+  background 0.25s ease,
+  box-shadow 0.25s cubic-bezier(0.4,0,0.2,1),
+  transform 0.25s ease;
+}
+
+#btn2:hover{
+  background: rgba(215, 213, 255, 0.263);
+  box-shadow: 0px 8px 15px rgba(232, 217, 249, 0.304);
+  transform: translateY(-2px);
+}
+
+.heading .heading_button button img{
+  width: 20px;
+  
+}
