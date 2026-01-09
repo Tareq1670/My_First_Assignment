@@ -92,8 +92,22 @@ header{
   gap: 32px;
 }
 
+.nav_item ul li{
+  transition: all 0.25s ease;
+}
+
+.nav_item ul li:hover{
+  transform: scale(1.08);
+  
+}
+
 .header_section .access_link a{
   color: rgba(255, 255, 255, 1);
+  transition: all 0.25s ease;
+}
+
+.nav_item ul li a:hover{
+  color: rgba(48, 184, 104, 1);
 }
 
 
@@ -382,3 +396,4 @@ hr{
   margin-top: 30px;
   color: rgba(250, 250, 250, 1);
 }
+
