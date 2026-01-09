@@ -325,6 +325,7 @@ header{
 
 #thinking_section{
   background: rgb(255, 255, 255);
+  padding-bottom: 120px;
 }
 
 #thinking_section .thinking_content{
@@ -334,7 +335,6 @@ header{
   background: rgba(247, 246, 242, 1);
   border-radius: 12px;
   padding: 80px 40px;
-  margin-bottom: 120px;
 }
 
 #thinking_section .thinking_content p{
@@ -384,10 +384,11 @@ header{
 
 .footer_container .social_section img{
   width: 20px;
+  border-radius: 50%;
 }
 
 hr{
-  border: 1px solid rgba(229, 231, 235, 0.444);
+  border: 1px solid rgba(229, 231, 235, 0.2);
 }
 
 .footer_content p{
